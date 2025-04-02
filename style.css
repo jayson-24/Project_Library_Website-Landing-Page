@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #55741c; /* Green topbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-height: 40px; /* Set a maximum height for the logo */
+    width: auto; /* Maintain aspect ratio */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White navigation links for contrast */
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #e6f4ea; /* Light green hover effect for navigation links */
+}
+
+.get-started-btn {
+    padding: 10px 20px;
+    background-color: #fff; /* White button background */
+    color: #28a745; /* Green button text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.get-started-btn:hover {
+    background-color: #e6f4ea; /* Light green hover effect for button */
+    color: #218838; /* Darker green text on hover */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #e6f4ea;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    animation: zoomOut 1s ease-in-out forwards; /* Apply zoom-out animation */
+}
+
+/* Zoom-out animation keyframes */
+@keyframes zoomOut {
+    0% {
+        transform: scale(1.5); /* Start at 1.5x size */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: scale(1); /* End at normal size */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cta-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cta-form input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cta-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-form button:hover {
+    background-color: #218838;
+}
+
+.trusted-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.feature-box {
+    text-align: center;
+    max-width: 200px;
+}
+
+.feature-box i {
+    font-size: 40px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.feature-box h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 14px;
+    color: #666;
+}
